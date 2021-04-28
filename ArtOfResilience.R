@@ -1,5 +1,3 @@
-# heatmap 
-
 # data
 c_feedback <- read.csv("c_feedbacks.csv")
 View(c_feedback)
@@ -14,8 +12,7 @@ library(tidyverse)
 library(hrbrthemes)
 library(grid)
 
-# heatmap: option 2 
-
+# heatmap
 ggp_2 <-ggplot(c_feedback, aes(x=week, y=name, fill=enjoyment_l)) + 
         geom_tile(color="white", size=0.4) +
         geom_text(aes(label=enjoyment_l), size=5, color="white") +
@@ -37,6 +34,8 @@ ggp_2
 # Statistics
 
 summary(c_feedback$enjoyment_l)
+
+# histogram
 
 hist <- c_feedback %>%
        ggplot(aes(x=enjoyment_l)) +
