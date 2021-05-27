@@ -1,2 +1,2 @@
 # ArtOfResilience
-Codes Analysis Art of Resilience Evaluation
+Analysis Art of Resilience Evaluation
